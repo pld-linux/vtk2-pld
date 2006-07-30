@@ -9,7 +9,6 @@ Source0:	http://entermedia.pl/~shadzik/vtk/%{name}-%{version}.tar.gz
 # Source0-md5:	0bc7c4965fbc7e784562b3b210db21da
 URL:		http://entermedia.pl/~shadzik/vtk/
 BuildRequires:	libstdc++-devel
-BuildRequires:	make
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
