@@ -24,7 +24,8 @@ Wirtualny Tomasz K³oczko
 %build
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
-	LDFLAGS="%{rpmldflags}"
+	LDFLAGS="%{rpmldflags}" \
+	CXX="%{__cxx}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
