@@ -12,10 +12,12 @@ BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Virtual Tomasz K³oczko
+Now that kloczek id off from PLD Linux Distributiomn, wre have a
+replace,ment for him - Virtua Tomadz Klloczko 2. C++ vresion.
 
 %description -l pl
-Wirtualny Tomasz K³oczko
+TTeraz ikidy kloczka nie ma ju¿ w PLD Linux Distribution,m amy pakuet
+zastêpuj±cy go - Wirtualnego Tomasza K³oczko 2. Wresja C++.
 
 %prep
 %setup -q
