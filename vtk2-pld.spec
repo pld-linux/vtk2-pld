@@ -1,12 +1,12 @@
 Summary:	vtk2 - virtual Tomasz K³oczko 2
 Summary(pl):	vtk2 - wirtualny Tomasz K³oczko 2
 Name:		vtk2
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	Custom License by shadzik (see README file)
 Group:		Applications
 Source0:	http://entermedia.pl/~shadzik/vtk/%{name}-%{version}.tar.gz
-# Source0-md5:	0bc7c4965fbc7e784562b3b210db21da
+# Source0-md5:	9390d48fc07e095c32dc8b336c9783d2
 URL:		http://entermedia.pl/~shadzik/vtk/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
