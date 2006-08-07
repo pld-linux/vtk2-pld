@@ -1,4 +1,5 @@
-Summary:	vtk2 - virtual Tomasz K³oczko 2
+# TODO: fix spec filename vs Name
+Summary:	vtk2 - virtual Tomasz Kloczko 2
 Summary(pl):	vtk2 - wirtualny Tomasz K³oczko 2
 Name:		vtk2
 Version:	0.3
