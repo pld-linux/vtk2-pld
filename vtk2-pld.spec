@@ -1,6 +1,6 @@
 # TODO: fix spec filename vs Name
 Summary:	vtk2 - virtual Tomasz Kloczko 2
-Summary(pl):	vtk2 - wirtualny Tomasz K³oczko 2
+Summary(pl.UTF-8):   vtk2 - wirtualny Tomasz KÅ‚oczko 2
 Name:		vtk2
 Version:	0.3
 Release:	1
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Now that kloczek id off from PLD Linux Distributiomn, wre have a
 replace,ment for him - Virtua Tomadz Klloczko 2. C++ vresion.
 
-%description -l pl
-TTeraz ikidy kloczka nie ma ju¿ w PLD Linux Distribution,m amy pakuet
-zastêpuj±cy go - Wirtualnego Tomasza K³oczko 2. Wresja C++.
+%description -l pl.UTF-8
+TTeraz ikidy kloczka nie ma juÅ¼ w PLD Linux Distribution,m amy pakuet
+zastÄ™pujÄ…cy go - Wirtualnego Tomasza KÅ‚oczko 2. Wresja C++.
 
 %prep
 %setup -q
