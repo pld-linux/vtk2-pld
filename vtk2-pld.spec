@@ -1,3 +1,6 @@
+
+%define		_realname	vtk2
+
 Summary:	vtk2 - virtual Tomasz Kloczko 2
 Summary(pl.UTF-8):	vtk2 - wirtualny Tomasz Kłoczko 2
 Name:		vtk2-pld
@@ -5,7 +8,7 @@ Version:	0.3
 Release:	1
 License:	Custom License by shadzik (see README file)
 Group:		Applications
-Source0:	http://entermedia.pl/~shadzik/vtk/%{name}-%{version}.tar.gz
+Source0:	http://entermedia.pl/~shadzik/vtk/%{_realname}-%{version}.tar.gz
 # Source0-md5:	9390d48fc07e095c32dc8b336c9783d2
 URL:		http://entermedia.pl/~shadzik/vtk/
 BuildRequires:	libstdc++-devel
@@ -20,7 +23,7 @@ TTeraz ikidy kloczka nie ma już w PLD Linux Distribution,m amy pakuet
 zastępujący go - Wirtualnego Tomasza Kłoczko 2. Wresja C++.
 
 %prep
-%setup -q
+%setup -q -n %{_realname}-%{version}
 
 %build
 %{__make} \
