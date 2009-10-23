@@ -1,0 +1,71 @@
+--- vtk2.cpp	(wersja 10835)
++++ vtk2.cpp	(kopia robocza)
+@@ -13,6 +13,7 @@
+ #include <string>
+ #include <map>
+ #include <fstream>
++#include <cstdlib>
+ 
+ #define book ".vtkdatabase"
+ 
+@@ -60,7 +61,7 @@
+ string zmien(string ch)
+ {
+   char temp;
+-  int i=0;
++  unsigned int i=0;
+   for(i=0;i<ch.size();i++)
+   {
+     if(i!=0)
+@@ -117,7 +118,7 @@
+       dane.push_back(mapa); //inserts the map into the vector
+    }
+ 
+-   for(int i=0;i < dane.size(); ++i) //start searching :)
++   for(unsigned int i=0;i < dane.size(); ++i) //start searching :)
+    {
+       if ((dane[i]["nick"] == s_nick) && (i+1 < dane.size()))
+       {
+@@ -126,13 +127,14 @@
+          return zmien(s_nick);
+       }
+    }
++   return "";
+ }
+ 
+ /*
+  * Shows the whole list using the same idea as in search(string arg);
+ */
+ 
+-int list()
++void list()
+ {
+    ifstream file(book);
+    vector<map<string, string> > dane;
+@@ -153,7 +155,7 @@
+       dane.push_back(mapa);
+    }
+ 
+-   for(int i=0;i < dane.size(); ++i)
++   for(unsigned int i=0;i < dane.size(); ++i)
+    {
+       if (i+1 < dane.size()) //in order not to get an segfault in case that we were beyond our memory
+       {
+@@ -167,7 +169,7 @@
+  * Removes entries from the file if existent
+ */
+ 
+-int rm(string r_nick)
++void rm(string r_nick)
+ {
+    ifstream file(book);
+    vector<map<string, string> > dane;
+@@ -189,7 +191,7 @@
+    }
+    
+    ofstream file2(book, ios::trunc);
+-   for(int i=0;i < dane.size(); ++i) //start searching :)
++   for(unsigned int i=0;i < dane.size(); ++i) //start searching :)
+    {
+       if ((dane[i]["nick"] == r_nick) && ((i+2) < dane.size()))
+       {
