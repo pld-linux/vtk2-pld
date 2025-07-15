@@ -25,7 +25,7 @@ zastępujący go - Wirtualnego Tomasza Kłoczko 2. Wresja C++.
 
 %prep
 %setup -q -n %{_realname}-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__make} \
